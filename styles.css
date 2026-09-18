@@ -338,6 +338,12 @@ h1 {
   text-align: center;
 }
 
+/* ensure about paragraph centers as well */
+#about p {
+  text-align: center;
+  margin-left: 0;
+}
+
 .split p {
   margin: 0;
   max-width: 56ch;
