@@ -303,11 +303,7 @@ h1 {
   align-items: center;
 }
 
-/* keep split content left-aligned for readability */
-.split > div,
-.split p {
-  text-align: left;
-}
+/* split defaults inherit centered card alignment; specific sections can override */
 
 /* center the About card content specifically */
 #about {
