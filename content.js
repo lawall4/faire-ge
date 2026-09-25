@@ -16,7 +16,7 @@ export const content = {
     eyebrow: "Ocean-inspired brand site",
     title: "Ocean intelligence and monitoring for safer, smarter, and more sustainable ocean use.",
     lede:
-      "faire-ge specialises in Ocean Intelligence solutions. It unlocks the power of open source ocean data for public and environmental benefit.",
+      "faire-ge specialises in Ocean Intelligence solutions. It unlocks the power of open source and crowd sourced ocean data for public and environmental benefit.",
     primaryCta: "Start here",
     secondaryCta: "Learn more"
   },
