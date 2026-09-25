@@ -20,8 +20,8 @@ const initPage = () => {
     brandLink.setAttribute("aria-label", content.brand.homeLabel);
   }
 
-  setText("#brand-name", content.brand.name);
-  setText("#nav-about", content.nav.about);
+  // brand name removed from header; set nav labels
+  setText("#nav-values", content.nav.values);
   setText("#nav-contact", content.nav.contact);
 
   setText("#hero-eyebrow", content.hero.eyebrow);
@@ -30,16 +30,10 @@ const initPage = () => {
   setText("#hero-primary-cta", content.hero.primaryCta);
   setText("#hero-secondary-cta", content.hero.secondaryCta);
 
-  setText("#about-label", content.about.label);
-  setText("#about-title", content.about.title);
-  setText("#about-body", content.about.body);
   setText("#values-label", content.values.label || "Values");
   // populate a simple values body if present
   if (content.values && content.values.body) {
     setText("#values-body", content.values.body);
-  } else if (Array.isArray(content.values && content.values.items) && content.values.items.length) {
-    // fallback: join item titles
-    setText("#values-body", content.values.items.map((i) => i.title).join(" — "));
   } else {
     setText("#values-body", "Coming soon");
   }

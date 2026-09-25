@@ -305,44 +305,7 @@ h1 {
 
 /* split defaults inherit centered card alignment; specific sections can override */
 
-/* center the About card content specifically */
-#about {
-  text-align: center;
-}
-
-#about > div,
-#about > p {
-  text-align: center;
-}
-
-/* make the About split into a single column so heading centers across the card */
-#about.split {
-  grid-template-columns: 1fr;
-}
-
-#about h2 {
-  width: 100%;
-  margin-left: 0;
-}
-
-/* center the content block children vertically and horizontally */
-#about > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#about .section-label,
-#about h2 {
-  text-align: center;
-}
-
-/* ensure about paragraph centers as well */
-#about p {
-  text-align: center;
-  margin-left: 0;
-}
+/* About section removed; no specific About styles needed */
 
 .split p {
   margin: 0;
